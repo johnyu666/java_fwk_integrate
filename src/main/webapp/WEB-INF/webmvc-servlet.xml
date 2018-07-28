@@ -12,7 +12,6 @@
         http://www.springframework.org/schema/aop
         http://www.springframework.org/schema/aop/spring-aop.xsd">
    
-   
 	<context:component-scan base-package="controller"></context:component-scan>
 	
 	<mvc:annotation-driven></mvc:annotation-driven>
@@ -20,7 +19,7 @@
 	<mvc:resources location="/" mapping="*.html"></mvc:resources>
 	<mvc:resources location="/css/" mapping="/css/**"></mvc:resources>
 	<mvc:resources location="/js/" mapping="/js/*.js"></mvc:resources>
-	<mvc:resources location="/imgs/" mapping="/images/*.jpg"></mvc:resources>
+	<mvc:resources location="/imgs/" mapping="/images/**"></mvc:resources>
 	
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">

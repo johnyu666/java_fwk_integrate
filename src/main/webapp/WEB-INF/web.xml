@@ -4,7 +4,7 @@
                              http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
 
-	<display-name>Archetype Created Web Application</display-name>
+	<display-name>Spring fwk,mvc,jpa with Hibernate Web Application</display-name>
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
