@@ -24,7 +24,7 @@ function form2json(form) {
     let obj={};
     $.each(form.children("[type!=submit]"),(index,item)=>{
         let $item=$(item);
-        obj[[$item.attr("name")]]=$item.val();
+        obj[$item.attr("name")]=$item.val();
 
     })
     return obj;

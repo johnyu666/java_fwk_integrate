@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 import pojo.Customer;
 import pojo.CustomerErrorMessage;
 import service.CustomerManager;
+
+@CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("customers")
 public class CustomerController {
