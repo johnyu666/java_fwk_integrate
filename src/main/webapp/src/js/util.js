@@ -1,3 +1,5 @@
+import "expose-loader?$!jquery";
+
 /**
  * 用于完成对Ajax的通用封装
  * @param url
@@ -6,7 +8,7 @@
  * @param callback
  * @returns
  */
-function myAjax(url,method,data,callback){
+export function myAjax(url,method,data,callback){
     let contentType="application/json";
     let options={url:url,type:method,contentType:contentType};
     if(data!=null) options.data=JSON.stringify(data);
@@ -34,3 +36,4 @@ $.fn.serializeObject = function()
     });
     return o;
 };
+

@@ -3,7 +3,7 @@
  * @param comp
  * @returns
  */
-function Model(comp) {
+export function Model(comp) {
     Array.call(this);
     if(typeof this.add!='function'){
         Model.prototype.add=function (c) {

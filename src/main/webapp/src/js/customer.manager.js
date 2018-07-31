@@ -1,10 +1,15 @@
+import "expose-loader?$!jquery";
+import {myAjax} from "./util";
+import {Model} from "./Model";
+
+
 /**
  * 本页面中的“容器性质”的Component
  * @param $view
  * @param url
  * @returns
  */
-function AppComponent($view,url) {
+export function AppComponent($view,url) {
 	//闭包形式，公开私有函数，用于数据更新出现错误时，调用
 	this.refresh=refresh;
 	//mv的绑定点，实现观察者模式
@@ -83,6 +88,4 @@ function UpdateFormComponet($view,model,url) {
     }
 }
 
-$(function () {
-    let app=new AppComponent($("#app"),"http://localhost:8080/integrator/customers/");
-});
+
