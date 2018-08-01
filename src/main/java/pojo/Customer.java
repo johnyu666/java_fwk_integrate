@@ -7,8 +7,8 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity
-@Table(name="customers")
+//@Entity
+//@Table(name="customers")
 public class Customer {
 	@Id
 	@GenericGenerator(strategy="uuid",name="uuid")

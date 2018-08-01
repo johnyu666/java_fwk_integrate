@@ -20,8 +20,4 @@ public class CustomerController {
 	public Customer addCustomer(@RequestBody Customer c) {
 		return customerManager.registCustomer(c);
 	}
-	
-	
-	
-	
 }

@@ -1,0 +1,3 @@
+select * from item;
+
+ 8a6186f064f327eb0164f327ef700001 item1          0 8a6186f064f327eb0164f327ef230000

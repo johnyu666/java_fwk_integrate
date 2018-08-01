@@ -1,5 +1,6 @@
 /target/
 /.settings/
+/node_module/
 .classpath
 .DS_Store
 .project
